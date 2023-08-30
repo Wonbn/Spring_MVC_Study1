@@ -22,7 +22,7 @@ public class RequestHeaderServlet extends HttpServlet {
         response.getWriter().write("ok");
     }
 
-    // 요청 메세지의 start line 정보
+    // 요청 메세지의 start-line 정보
     private void printStartLine(HttpServletRequest request) {
         System.out.println("--- REQUEST-LINE --- start ---");
         System.out.println("request.getMethod() = " + request.getMethod()); // GET
@@ -36,7 +36,7 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println();
     }
 
-    // 요청 메세지의 Header 정보
+    // 요청 메세지의 header 정보
     private void printHeaders(HttpServletRequest request) {
         System.out.println("--- Headers --- start ---");
         request.getHeaderNames().asIterator()
@@ -45,7 +45,7 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println();
     }
 
-    //Header 편리한 조회
+    // header 편리한 조회
     private void printHeaderUtils(HttpServletRequest request) {
         System.out.println("--- Header 편의 조회 --- start ---");
 
@@ -75,7 +75,7 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println();
     }
 
-    //기타 정보
+    // 기타 정보
     private void printEtc(HttpServletRequest request) {
         System.out.println("--- 기타 정보 --- start ---");
 
