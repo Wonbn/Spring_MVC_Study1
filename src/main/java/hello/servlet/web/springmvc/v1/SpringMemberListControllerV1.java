@@ -13,7 +13,6 @@ public class SpringMemberListControllerV1 {
 
     private final MemberRepository memberRepository = MemberRepository.getInstance();
 
-
     @RequestMapping("/springmvc/v1/members")
     public ModelAndView process() {
 
